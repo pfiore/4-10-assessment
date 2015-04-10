@@ -1,5 +1,7 @@
 var triangleCheck = function(sideA, sideB, sideC) {
 
+    //must run errors first
+
     if (sideA == 0 && sideB == 0 && sideC == 0)
     {
         return "error, must enter a number greater then 0 for all inputs"
@@ -14,6 +16,7 @@ var triangleCheck = function(sideA, sideB, sideC) {
     {
         return "error, one input cannot equal more than the other two combined"
     }
+    //triangle checkers
 
     if (sideA == sideB && sideB == sideC)
     {
