@@ -1,10 +1,5 @@
 var triangleCheck = function(sideA, sideB, sideC) {
 
-    var sideA = 1;
-    var sideB = 1;
-    var sideC = 2;
-
-
     if (sideA == sideB && sideB == sideC)
     {
         return "equilateral";
@@ -15,7 +10,7 @@ var triangleCheck = function(sideA, sideB, sideC) {
         return "isosceles";
     }
 
-    else if (sideA! = sideB && sideB! = sideC && sideC! = sideA)
+    else if (sideA !== sideB && sideB !== sideC && sideC !== sideA)
     {
         return "scalene";
     }
