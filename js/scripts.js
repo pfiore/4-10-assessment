@@ -1,8 +1,5 @@
 var triangleCheck = function(sideA, sideB, sideC) {
 
-
-
-
     if (sideA == 0 && sideB == 0 && sideC == 0)
     {
         return "error, must enter a number for all inputs"
@@ -34,3 +31,33 @@ var triangleCheck = function(sideA, sideB, sideC) {
     }
 
 };
+
+
+$(document).ready(function() {
+    $("form#trianglecheck").submit(function(event) {
+
+    var sideA = parseInt($("input#sideA").val());
+    var sideB = parseInt($("input#sideB").val());
+    var sideC = parseInt($("input#sideC").val());
+
+    var result = triangleCheck(sideA, sideB, sideC);
+
+    $("#result").show();
+    $("#error").hide();
+
+    $('.check').text(result);
+
+    event.preventDefault();
+    });
+
+    $("#clear").click(function(event) {
+        $("#result").hide();
+        $("#error").hide();
+        $("#sideB").val("");
+        $("#sideC").val("");
+        $("#sideA").val("").focus();
+
+    event.preventDefault();
+
+ });
+});

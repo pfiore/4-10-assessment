@@ -1,0 +1,22 @@
+body {
+    background-color: snow;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+  padding: 25px 0;
+  /*background: url('https://adventurepatches.files.wordpress.com/2011/05/parthenon-replica-nashville-tn-27-april-2011-5.jpg') no-repeat;*/
+  background-size: 100%;
+
+}
+
+h1 {
+  color: white;
+  text-shadow: 1px 1px 4px #000;
+  margin-top: 0;
+}
+
+#error, #result {
+  display: none;
+}
