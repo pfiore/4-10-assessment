@@ -6,9 +6,12 @@ User inputs the lengths of the sides of a triangle, and returns whether they for
 
 # SetUp and Use
 Requires: a web browser.
+Created on a Mac, and hasn't been tested on other operating systems.
 
 SetUp
 1. Clone repository into desktop
+2. Open directory name triangle
+3. Right - click on Triangle.html and open with web browser, or drag and drop Triangle.html onto web browsers icon
 
 # Copyright (c) 2015 (Patrick Fiorentino)
 

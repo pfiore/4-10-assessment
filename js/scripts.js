@@ -2,12 +2,12 @@ var triangleCheck = function(sideA, sideB, sideC) {
 
     if (sideA == 0 && sideB == 0 && sideC == 0)
     {
-        return "error, must enter a number for all inputs"
+        return "error, must enter a number greater then 0 for all inputs"
     }
 
     if (sideA == 0 || sideB == 0 || sideC == 0)
     {
-        return "error, all inputs must be valid numbers"
+        return "error, all inputs must be greater than 0"
     }
 
     if (sideA > sideB + sideC || sideB > sideA + sideC || sideC > sideA + sideB)
@@ -17,17 +17,17 @@ var triangleCheck = function(sideA, sideB, sideC) {
 
     if (sideA == sideB && sideB == sideC)
     {
-        return "equilateral";
+        return "equilateral triangle";
     }
 
     if ((sideA == sideB) || (sideB == sideC) || (sideC == sideA))
     {
-        return "isosceles";
+        return "isosceles triangle";
     }
 
     if (sideA !== sideB && sideB !== sideC && sideC !== sideA)
     {
-        return "scalene";
+        return "scalene triangle";
     }
 
 };
