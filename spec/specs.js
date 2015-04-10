@@ -11,5 +11,9 @@ describe('triangleCheck', function() {
         expect(triangleCheck(1, 2, 3)).to.equal("scalene")
     });
 
+    it("it takes three inputs from user, if inputs are all 0 return 'error, not a triangle'", function() {
+        expect(triangleCheck(0, 0, 0)).to.equal("error, not a triangle, enter numbers")
+    });
+
 
 });
