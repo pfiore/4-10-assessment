@@ -28,18 +28,13 @@ var triangleCheck = function(sideA, sideB, sideC) {
         return "isosceles triangle";
     }
 
-<<<<<<< HEAD
     if ((sideA*sideA) + (sideB*sideB) == (sideC*sideC))
     {
         return "right triangle";
     }
 
     else {
-=======
-    if (sideA !== sideB && sideB !== sideC && sideC !== sideA)
-    {
->>>>>>> 4f781f3fd7536f1f681df96af774fcc11980ba5d
-        return "scalene triangle";
+      return "scalene triangle";
     }
 
 };
